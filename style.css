@@ -106,3 +106,7 @@ p {
 #core4 {
   margin: 0 10px;
 }
+p::first-letter {
+  color: palevioletred;
+  font-size: 50px;
+}
