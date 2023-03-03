@@ -82,6 +82,7 @@ p {
   border-radius: 50px;
   box-shadow: 0px 0px 20px #b62c8d;
 }
+
 .balao:hover {
   width: 90px;
 }
