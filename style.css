@@ -8,7 +8,7 @@ body {
   margin: 0%;
   height: 100vh;
   background-color: #f1c6c6;
-  font-family: "Raleway", sans-serif;
+  font-family: "Helvetica", sans-serif;
   color: rgb(34, 34, 34);
   position: relative;
 }
@@ -24,38 +24,49 @@ body {
 .profile {
   text-align: center;
 }
-#titulo-principal {
+
+.titulo-principal {
   margin-top: 30px;
+  font-family: "Great Vibes", cursive;
 }
+
 .foto-principal {
   width: 250px;
-  border: 2px solid #ffffff; /*shorthand*/
+  border: 2px solid #ffffff;
+  /*shorthand*/
   border-radius: 20px;
   margin: 30px 30px 0px 30px;
   box-shadow: 0px 0px 10px #959595;
   margin-bottom: 20px;
 }
+
 .enfeite {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-#core1 {
-  width: 60px;
-  transform: rotate(-30deg);
-}
-#core2 {
-  width: 60px;
-  transform: rotate(30deg);
-}
-#core3 {
-  width: 60px;
-  transform: rotate(210deg);
-}
+
+#core1,
+#core2,
+#core3,
 #core4 {
   width: 60px;
+  transform: rotate(-30deg);
+  font-family: "Parisienne", cursive;
+}
+
+#core2 {
+  transform: rotate(30deg);
+}
+
+#core3 {
+  transform: rotate(210deg);
+}
+
+#core4 {
   transform: rotate(150deg);
 }
+
 .joblist {
   list-style: none;
   padding-left: 20px;
@@ -63,21 +74,25 @@ body {
 
 p {
   padding: 0 15px 15px 15px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .text1 {
   text-align: center;
+  font-family: "Great Vibes", cursive;
 }
 
 ::selection {
   color: palevioletred;
   background: black;
 }
+
 .balao {
   margin-top: 20px;
   width: 90px;
   height: 90px;
 }
+
 .video {
   border: solid 2px white;
   border-radius: 50px;
@@ -87,6 +102,7 @@ p {
 .balao:hover {
   width: 90px;
 }
+
 .footer {
   color: white;
   width: 100%;
@@ -98,17 +114,23 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+
 .footer p {
   padding: 0;
 }
 
-#core1,
-#core2,
-#core3,
-#core4 {
-  margin: 0 10px;
+.footer h2 {
+  width: 10%;
+  font-family: "Great Vibes", cursive;
+
+  @font-face {
+    font-family: "Great Vibes", cursive;
+    src: url();
+  }
 }
+
 p::first-letter {
   color: palevioletred;
   font-size: 50px;
+  font-family: "Parisienne", cursive;
 }

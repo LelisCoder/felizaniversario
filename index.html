@@ -7,30 +7,58 @@
     <title>Login</title>
     <link rel="stylesheet" href="login.css" />
   </head>
+
   <body>
     <header class="headerlogin">
       <div class="divaniversario">
         <h1>PARABÉNS</h1>
         <h2>Leia com atenção</h2>
       </div>
-      <div class="divlogin">
-        <input class="login" type="text" placeholder="Digite seu login" />
-      </div>
-      <div class="divpassword">
-        <input
-          class="password"
-          type="password"
-          placeholder="Digite sua senha"
-        />
-      </div>
-      <div class="divbottom">
-        <a href="index.html"><button class="entrar">Entrar</button></a>
-      </div>
+      <form id="loginForm" class="login-form" action="principal.html">
+        <div class="divlogin">
+          <input
+            class="login"
+            type="text"
+            name="username"
+            placeholder="Digite seu login"
+          />
+        </div>
+        <div class="divpassword">
+          <input
+            class="password"
+            type="password"
+            name="password"
+            placeholder="Digite sua senha"
+          />
+        </div>
+        <div class="divbottom">
+          <button class="entrar" type="submit">Entrar</button>
+        </div>
+      </form>
 
       <h1 class="dicasenha">
         Para ter acesso ao login você tem que me enviar uma foto sorrindo e para
         ter acesso a senha você tem que me enviar uma foto de beso.
       </h1>
     </header>
+
+    <script>
+      const loginForm = document.getElementById("loginForm");
+      loginForm.addEventListener("submit", (event) => {
+        event.preventDefault(); // previne que a página seja recarregada
+
+        const username = loginForm.elements.username.value;
+        const password = loginForm.elements.password.value;
+
+        // Verifica se as credenciais de login são válidas
+        if (username === "Sarita" && password === "princesa") {
+          // Credenciais válidas, redireciona o usuário para a página principal
+          window.location.href = "principal.html";
+        } else {
+          // Credenciais inválidas, exibe uma mensagem de erro para o usuário
+          alert("Login e senha inválidos. Por favor, tente novamente.");
+        }
+      });
+    </script>
   </body>
 </html>
