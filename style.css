@@ -28,7 +28,7 @@ body {
 
 .titulo-principal {
   margin-top: 30px;
-  font-family: 'Cinderela', sans-serif;
+  font-family: "Parisienne", cursive;
 }
 
 .videoperfil {
@@ -78,8 +78,7 @@ p {
 
 .text1 {
   text-align: center;
-  font-family: 'Cinderela', sans-serif;
-  
+  font-family: 'Great Vibes', cursive;  
 }
 
 ::selection {
@@ -107,7 +106,7 @@ p {
   color: white;
   width: 100%;
   text-align: center;
-  font-family: 'Cinderela', sans-serif;
+  font-family: 'Great Vibes', cursive;
   position: sticky;
   top: 100%;
   display: flex;
@@ -127,8 +126,4 @@ p::first-letter {
   color: palevioletred;
   font-size: 50px;
   font-family: "Parisienne", cursive;
-}
-@font-face {
-  font-family: 'Cinderela';
-  src: url('cinderela.ttf') format('truetype');
 }
