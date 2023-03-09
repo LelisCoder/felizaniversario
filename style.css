@@ -130,5 +130,5 @@ p::first-letter {
 }
 @font-face {
   font-family: 'Cinderela';
-  src: url('Cinderela.ttf') format('truetype');
+  src: url('cinderela.ttf') format('truetype');
 }
