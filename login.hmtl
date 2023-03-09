@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <header class="headerlogin">
+      <div class="divaniversario">
+        <h1>PARABÉNS</h1>
+        <h2>Leia com atenção</h2>
+      </div>
+      <div class="divlogin">
+        <input class="login" type="text" placeholder="Digite seu login" />
+      </div>
+      <div class="divpassword">
+        <input
+          class="password"
+          type="password"
+          placeholder="Digite sua senha"
+        />
+      </div>
+      <div class="divbottom">
+        <a href="index.html"><button class="entrar">Entrar</button></a>
+      </div>
+
+      <h1 class="dicasenha">
+        Para ter acesso ao login você tem que me enviar uma foto sorrindo e para
+        ter acesso a senha você tem que me enviar uma foto de beso.
+      </h1>
+    </header>
+  </body>
+</html>
